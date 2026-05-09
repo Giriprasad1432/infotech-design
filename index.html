@@ -67,6 +67,11 @@
                 text-transform: capitalize;
             }
 
+            header {
+                background-color: #FAFBFF;
+                width: 100%;
+            }
+
             .navbar {
                 display: flex;
                 flex-direction: row;
@@ -74,7 +79,9 @@
                 align-items: center;
                 gap: 141.15px;
                 height: 100px;
-                background-color: #FFFFFF;
+                background-color: transparent;
+                max-width: 1440px;
+                margin: 0 auto;
             }
 
             .contact-icon {
@@ -89,7 +96,7 @@
                 gap: 26px;
                 margin: 0px;
                 padding: 0px;
-                background-color: #FFFFFF;
+                background-color: #FAFBFF;
                 width: 630px;
                 height: 41px;
             }
@@ -163,15 +170,24 @@
                 gap: 26px;
             }
 
+            .c1-wrapper {
+                background-color: #FAFBFF;
+                width: 100%;
+            }
+
             .c1 {
                 display: flex;
                 flex-direction: row;
-                background-color: #FAFBFF;
+                background-color: transparent;
+                max-width: 1440px;
+                max-height: 729px;
+                margin: 0 auto;
+                justify-content: center;
+                padding-bottom: 66px;
             }
 
             .c1-right {
                 margin-top: 56px;
-                margin-bottom: 66px;
                 margin-right: 23px;
             }
 
@@ -227,12 +243,16 @@
                 margin: 0;
             }
 
-
-
             .banner-img {
                 width: 739.13px;
                 border-radius: 24px;
                 filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.08));
+            }
+
+            .c2-wrapper {
+                background-color: #FFFFFF;
+                width: 100%;
+                margin-bottom: 50px;
             }
 
             .c2 {
@@ -240,8 +260,9 @@
                 display: flex;
                 flex-direction: column;
                 gap: 36px;
-                margin-bottom: 50px;
-                background-color: #FFFFFF;
+                background-color: transparent;
+                max-width: 1440px;
+                margin: 0 auto;
             }
 
             .c2-head {
@@ -380,6 +401,10 @@
                 border: 2px solid #4356D6;
                 background-color: #F5F5F5;
                 color: #4356D6;
+            }
+
+            .nav-button:active img {
+                display: none !important;
             }
 
             .mobile-menu {
@@ -552,6 +577,10 @@
                 border: 2px solid #4356D6;
                 color: #4356D6;
                 background-color: transparent;
+            }
+
+            .nav-button:active img {
+                display: none !important;
             }
 
             .c1-right img {
@@ -809,10 +838,10 @@
 
 <body>
     <header>
-    <nav class="navbar">
+        <nav class="navbar">
             <img src="./Assets/Logo.png" class="nav-logo">
 
-    <input type="checkbox" id="menu-toggle">
+            <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="mobile-menu">
                 <img src="./Assets/Menu.png" alt="Menu" style="width: 100%; height: 100%;">
             </label>
@@ -846,78 +875,84 @@
             <a class="nav-button"><img src="./Assets/Contact-icon.png">Contact Us</a>
         </nav>
     </header>
-    <div class="c1">
-        <div class="c1-left">
-            <h1 class="c1-head">
-                Simplifying <span class="highlight">Compliance <img class="img-line"
-                        src="./Assets/underline-Vector.png"></img></span> for Research Analysts
+    <div class="c1-wrapper">
+        <div class="c1">
+            <div class="c1-left">
+                <h1 class="c1-head">
+                    Simplifying <span class="highlight">Compliance <img class="img-line"
+                            src="./Assets/underline-Vector.png"></img></span> for Research Analysts
 
-            </h1>
-            <p class="c1-desc">
-                Stay focused on your insights—we'll handle the compliance. Our expert solutions ensure your research
-                practices meet every regulatory requirement with confidence and ease
-            </p>
-            <div class="c1-checks">
-                <div class="check-item">
-                    <img src="./Assets/check-sign.png" width="24px" height="24px"></img>
-                    <p>End-to-end compliance support</p>
+                </h1>
+                <p class="c1-desc">
+                    Stay focused on your insights—we'll handle the compliance. Our expert solutions ensure your research
+                    practices meet every regulatory requirement with confidence and ease
+                </p>
+                <div class="c1-checks">
+                    <div class="check-item">
+                        <img src="./Assets/check-sign.png" width="24px" height="24px"></img>
+                        <p>End-to-end compliance support</p>
+                    </div>
+                    <div class="check-item">
+                        <img src="./Assets/check-sign.png" width="24px" height="24px"></img>
+                        <p>Regulatory filings made simple</p>
+                    </div>
+                    <div class="check-item">
+                        <img src="./Assets/check-sign.png" width="24px" height="24px"></img>
+                        <p>Tailored solutions for independent analysts & firms</p>
+                    </div>
                 </div>
-                <div class="check-item">
-                    <img src="./Assets/check-sign.png" width="24px" height="24px"></img>
-                    <p>Regulatory filings made simple</p>
-                </div>
-                <div class="check-item">
-                    <img src="./Assets/check-sign.png" width="24px" height="24px"></img>
-                    <p>Tailored solutions for independent analysts & firms</p>
+                <div class="c1-buttons">
+                    <a class="nav-button"><img src="./Assets/Contact-icon.png">Get Started</a>
+                    <a class="nav-button"><img src="./Assets/Contact-icon.png">Book A Consultation</a>
                 </div>
             </div>
-            <div class="c1-buttons">
-                <a class="nav-button"><img src="./Assets/Contact-icon.png">Get Started</a>
-                <a class="nav-button"><img src="./Assets/Contact-icon.png">Book A Consultation</a>
+            <div class="c1-right">
+                <img class="banner-img" src="./Assets/Banner Image.png">
             </div>
-        </div>
-        <div class="c1-right">
-            <img class="banner-img" src="./Assets/Banner Image.png">
         </div>
     </div>
-    <div class="c2">
-        <img class="vector-dec-1" src="./Assets/Vector2.png">
-        <img class="vector-dec-2" src="./Assets/Vector1.png">
-        <div class="c2-top">
-            <h2 class="c2-head">
-                Why <span class="highlight">Compliance Matters </span>for Research Analysts
-            </h2>
-            <p class="c2-desc">
-                In today's regulatory environment, even a small oversight can lead to penalties, reputational risks, and
-                loss of client trust. We help Research Analysts and firms navigate complex compliance requirements so
-                they can focus on delivering high-quality research without worry.
-            </p>
-        </div>
-        <div class="c2-bottom">
-            <div class="c2-img-wrapper">
-                <img class="c2-img" src="./Assets/Section2-Image.png">
+    <div class="c2-wrapper">
+        <div class="c2">
+            <img class="vector-dec-1" src="./Assets/Vector2.png">
+            <img class="vector-dec-2" src="./Assets/Vector1.png">
+            <div class="c2-top">
+                <h2 class="c2-head">
+                    Why <span class="highlight">Compliance Matters </span>for Research Analysts
+                </h2>
+                <p class="c2-desc">
+                    In today's regulatory environment, even a small oversight can lead to penalties, reputational risks,
+                    and
+                    loss of client trust. We help Research Analysts and firms navigate complex compliance requirements
+                    so
+                    they can focus on delivering high-quality research without worry.
+                </p>
             </div>
-            <div class="c2-right">
-                <div class="feature-card">
-                    <img class="feature-card-icon" src="./Assets/Regulatory Clarity.png">
-                    <div class="card-content">
-                        <h3 class="card-title">Regulatory Clarity</h3>
-                        <p class="card-text">We Decode Complex Compliance Rules Into Simple, Actionable Steps.</p>
-                    </div>
+            <div class="c2-bottom">
+                <div class="c2-img-wrapper">
+                    <img class="c2-img" src="./Assets/Section2-Image.png">
                 </div>
-                <div class="feature-card">
-                    <img class="feature-card-icon" src="./Assets/Hassle-Free Filings Clarity.png">
-                    <div class="card-content">
-                        <h3 class="card-title">Hassle-Free Filings Clarity</h3>
-                        <p class="card-text">From registration to ongoing reporting—we manage it end-to-end. </p>
+                <div class="c2-right">
+                    <div class="feature-card">
+                        <img class="feature-card-icon" src="./Assets/Regulatory Clarity.png">
+                        <div class="card-content">
+                            <h3 class="card-title">Regulatory Clarity</h3>
+                            <p class="card-text">We Decode Complex Compliance Rules Into Simple, Actionable Steps.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="feature-card">
-                    <img class="feature-card-icon" src="./Assets/Risk Protection.png">
-                    <div class="card-content">
-                        <h3 class="card-title">Risk Protection</h3>
-                        <p class="card-text">Stay ahead of audits, inspections, and compliance gaps with proactive
-                            support.</p>
+                    <div class="feature-card">
+                        <img class="feature-card-icon" src="./Assets/Hassle-Free Filings Clarity.png">
+                        <div class="card-content">
+                            <h3 class="card-title">Hassle-Free Filings Clarity</h3>
+                            <p class="card-text">From registration to ongoing reporting—we manage it end-to-end. </p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <img class="feature-card-icon" src="./Assets/Risk Protection.png">
+                        <div class="card-content">
+                            <h3 class="card-title">Risk Protection</h3>
+                            <p class="card-text">Stay ahead of audits, inspections, and compliance gaps with proactive
+                                support.</p>
+                        </div>
                     </div>
                 </div>
             </div>
